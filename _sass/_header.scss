@@ -1,0 +1,42 @@
+
+.site-header {
+    border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
+    // Positioning context for the mobile navigation icon
+    position:relative;
+}
+
+.nav-container {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 56px;
+    z-index: 1000;
+    border-bottom: 1px solid $grey-color-light;
+
+}
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+
+    #pills-home-tab {
+        color: $text-color;
+        line-height: $base-line-height;
+        letter-spacing: 0.09em;
+        margin-top: 8px;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    }
+
+
+}

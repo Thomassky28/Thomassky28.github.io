@@ -3,40 +3,65 @@
 ---
 @charset "utf-8";
 
+// variables
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,800');
+$label-font: 'Nunito',
+sans-serif;
+%title-style {
+  text-transform: uppercase;
+  font-family: $label-font;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+%header-style {
+  @extend %title-style;
+  text-align: center;
+  i {
+    margin-right: 0.3em;
+  }
+}
+
+%sub-title-style {
+  font-family: $label-font;
+  font-size: 1em;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+$para-font: 'Bitter',
+georgia,
+serif;
+
+%para-style {
+  font-family: $para-font;
+  font-size: 0.9em;
+}
+
+$btn-color: rgb(177, 89, 89);
+$facepic-length: 277px;
 
 
-// Our variables
+
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-weight: 300;
 $base-line-height: 1.5;
+
+$background-color: #ffffff;
+$base-line-height: 1.5;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 45%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
 
 
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -47,7 +72,8 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+    "layout",
+    "header",
+    "about",
+    "employment"
 ;
