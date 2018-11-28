@@ -1,0 +1,53 @@
+
+main.site-about {
+  padding-top: 2em;
+  article.container {
+
+    div.row {
+      padding: 15px;
+      /* vertically align img and profile*/
+      display: flex;
+      align-items: center;
+      img {
+        margin: 0 auto;
+        width: $facepic-length;
+        height: 320px;
+        border-radius: 1px;
+      }
+      div.profile {
+        margin-top: 15px;
+        padding: 1em 0em;
+        display: block;
+      }
+      section.bio {
+        h1,
+        h2 {
+          margin: 0;
+        }
+        h1 {
+          @extend %title-style;
+        }
+        h2 {
+          @extend %sub-title-style;
+        }
+        p {
+          font-family: $label-font;
+          font-weight: 300;
+          font-size: 1.09em;
+        }
+      }
+      a.btn {
+        font-family: $font-words;
+        font-size: 1em;
+        display: inline-block;
+        margin: 0 0.5em 0.5em 0;
+        padding: 0.3em;
+        background-color: $grey-color-light;
+        color: $text-color;
+        &:hover {
+          background-color: $background-color;
+        }
+      }
+    }
+  }
+}

@@ -3,5 +3,11 @@
  */
 
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $label-font;
     }
+
+body {
+  color: #fff;
+  background-color: #fff;
+  box-sizing: border-box;
+}
