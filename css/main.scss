@@ -41,7 +41,16 @@ $font-title: 'Poppins', sans-serif;
   font-weight: 200;
 }
 
+%sub-title-style-2 {
+  font-family: $font-title;
+  font-size: 1.5em;
+  font-weight: 200;
+}
 
+%para-style {
+  font-family: $font-title;
+  font-size: 0.9em;
+}
 
 $btn-color: rgb(177, 89, 89);
 $facepic-length: 277px;
@@ -60,6 +69,10 @@ $grey-color-dark:  darken($grey-color, 25%);
 $spacing-unit:     30px;
 
 $text-color:       #111;
+
+$top-bott-margin: 1em 0;
+
+$line-color: #555151;
 
 
 @mixin media-query($device) {

@@ -1,1 +1,60 @@
 
+
+main.site-employment {
+  header#employment-header {
+    @extend %header-style;
+  }
+  main.container {
+
+    section.job-title {
+      margin: $top-bott-margin;
+      text-align: right;
+      border-right: 2px $line-color solid;
+
+
+      header.title {
+        font-weight: 800;
+        @extend %sub-title-style-2;
+      }
+
+      main .compy-name {
+        font-weight: 200;
+        font-size: 20px;
+        font-family: $font-title;
+
+
+      }
+
+      footer #time{
+        font-size: 20px;
+        font-family: $font-title;
+        font-weight: 200;
+      }
+    }
+
+    section.job-description {
+      margin: $top-bott-margin;
+      font-family: $font-title;
+      font-weight: 200;
+      font-size: 16px;
+      padding-left: 0px;
+
+      p{
+        font-size: 1.2em;
+        margin-bottom: 2px;
+      }
+
+
+    }
+
+    @media (max-width: 575px) {
+      section.job-title {
+        text-align: left;
+        margin-left: 0;
+        border-right: none;
+        margin-bottom: 6px;
+
+      }
+    }
+  }
+}
