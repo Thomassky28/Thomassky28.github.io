@@ -13,6 +13,11 @@ main.site-about {
         width: $facepic-length;
         height: 320px;
         border-radius: 1px;
+        box-shadow: $box-shadow;
+        transition: transform .2s;
+        &:hover{
+        transform: scale(1.05);
+        }
       }
       div.profile {
         margin-top: 15px;

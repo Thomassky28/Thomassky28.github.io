@@ -1,5 +1,5 @@
 .skills {
-    background: $grey-color-light;
+    background: white;
     h2 {text-align: center;
         @extend %title-style;
        }
@@ -16,7 +16,7 @@
         width: 12.5rem;
         padding: 15px;
         margin: 15px;
-        background: white;
+        background: $grey-color-light;
         text-align: center;
         border-radius: 10px;
     }

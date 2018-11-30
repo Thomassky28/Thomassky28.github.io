@@ -27,6 +27,8 @@ $font-title: 'Poppins', sans-serif;
   font-size: 2em;
 }
 
+
+
 %header-style {
   @extend %title-style;
   text-align: center;
@@ -73,6 +75,7 @@ $text-color:       #111;
 $top-bott-margin: 1em 0;
 
 $line-color: #555151;
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 @mixin media-query($device) {
@@ -91,5 +94,6 @@ $line-color: #555151;
     "employment",
     "education",
     "project",
-    "skills"
+    "skills",
+    "footer"
 ;
