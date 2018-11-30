@@ -1,0 +1,28 @@
+.skills {
+    background: $grey-color-light;
+    h2 {text-align: center;
+        @extend %title-style;
+       }
+}
+
+.skills-list {
+
+    margin: 0;
+    text-align: center;
+    margin: 0 auto;
+
+    article {
+
+        width: 12.5rem;
+        padding: 15px;
+        margin: 15px;
+        background: white;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    img {
+        height: 68px;
+    }
+}
+
