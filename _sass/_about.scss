@@ -1,6 +1,8 @@
 
 main.site-about {
   padding-top: 2em;
+  margin-top: 35px;
+
   article.container {
 
     div.row {
@@ -56,5 +58,12 @@ main.site-about {
         }
       }
     }
+  }
+}
+
+@media (max-width: 600px) {
+  main.site-about {
+
+    margin-top: 110px;
   }
 }
